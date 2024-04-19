@@ -61,7 +61,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
-  zIndex: theme.zIndex.drawer + 1,
+  // zIndex: theme.zIndex.drawer + 1,
 
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
@@ -192,14 +192,15 @@ export default function MenuDisplay() {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-        position="fixed"
+        // position="fixed"
         open={open}
         sx={{
+          backgroundColor:"#302929",
           ...(open && { display: "none" }),
         }}
       >
         <Toolbar>
-          <img src={logo} alt="Logo" height={40} width={40} />
+          
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -209,7 +210,7 @@ export default function MenuDisplay() {
               marginLeft: 5,
             }}
           >
-            <MenuIcon />
+           <img src={logo} alt="Logo" height={40} width={40} />
           </IconButton>
         </Toolbar>
       </AppBar>

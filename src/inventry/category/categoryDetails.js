@@ -129,7 +129,7 @@ const CategoryDetails = () => {
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={{ xs: 1, sm: 2, md: 4 }}
-          sx={{ justifyContent: "flex-end", marginBottom: "10px" }}
+          sx={{ justifyContent: "flex-end", marginBottom: "10px", zIndex:"999"}}
         >
           <TextField
             id="standard-basic"
